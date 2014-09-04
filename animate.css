@@ -1,0 +1,138 @@
+@-webkit-keyframes swing {
+    100%,20%,40%,60%,80% {
+        -webkit-transform-origin: top center
+    }
+
+    20% {
+        -webkit-transform: rotate(1deg)
+    }
+
+    40% {
+        -webkit-transform: rotate(-1deg)
+    }
+
+    60% {
+        -webkit-transform: rotate(1deg)
+    }
+
+    80% {
+        -webkit-transform: rotate(-1deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes swing {
+    20% {
+        -moz-transform: rotate(1deg)
+    }
+
+    40% {
+        -moz-transform: rotate(-1deg)
+    }
+
+    60% {
+        -moz-transform: rotate(1deg)
+    }
+
+    80% {
+        -moz-transform: rotate(-1deg)
+    }
+
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes swing {
+    20% {
+        -o-transform: rotate(1deg)
+    }
+
+    40% {
+        -o-transform: rotate(-1deg)
+    }
+
+    60% {
+        -o-transform: rotate(1deg)
+    }
+
+    80% {
+        -o-transform: rotate(-1deg)
+    }
+
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes swing {
+    20% {
+        -ms-transform: rotate(1deg)
+    }
+
+    40% {
+        -ms-transform: rotate(-1deg)
+    }
+
+    60% {
+        -ms-transform: rotate(1deg)
+    }
+
+    80% {
+        -ms-transform: rotate(-1deg)
+    }
+
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+@keyframes swing {
+    20% {
+        transform: rotate(1deg)
+    }
+
+    40% {
+        transform: rotate(-1deg)
+    }
+
+    60% {
+        transform: rotate(1deg)
+    }
+
+    80% {
+        transform: rotate(-1deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+.swing {
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    -o-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+	-moz-animation-name: swing;
+	-o-animation-name: swing;
+	animation-name: swing;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	-ms-animation-duration: .5s;
+	-o-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+}
