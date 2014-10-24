@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+        form, label, input{
+            margin: 0;
+            padding: 0;
+        }
+        form, label, input{            
+            border: 0;
+            line-height: 1.5;
+        }
+        label{            
+            display: block;
+        }
+        input{
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .hide{
+            display: none;
+        }
+        input[type="search"]::-webkit-input-placeholder {
+           color: red;
+        }
+        :required{
+            border: 1px solid yellow;
+        }
+        :required:after{
+            content: "*";
+            color: #f00;
+        }
+        </style>
+    </head>
+    <body>
+        search: <br/>
+        <input id="search1" type="search" form="form1" placeholder="aaaa" autofocus list="suggest" required title="empty" spellcheck="true">
+        <input type="submit" value="search" form="form1">
+        <datalist id="suggest" class="hide">
+            <option value="afengzai1">afengzai1</option>
+            <option value="fengzai2">fengzai2</option>
+            <option value="fengzai3">fengzai3</option>
+        </datalist>
+        <form id="form1" action="/" method="post">            
+            date: <br/><input type="date" id="date-demo"><br/>
+            month: <br/><input type="month" id="month-demo"><br/>
+            week: <br/><input type="week" id="week-demo"><br/>
+            datetime: <br/><input type="datetime" id="date-time"><br/>
+            datetime-local: <br/><input type="datetime-local" id="date-time-local"><br/>
+            time: <br/><input type="time" id="time-demo"><br/>
+            autocomplete: <br/><input type="text" id="auto-complete" autocomplete="off"><br/>
+            tel: <br/><input type="tel" id="tel-demo" name="tel"><br/>
+            url: <br/><input type="url" id="url-demo" maxlength="1" value="aa"><br/>
+            email: <br/><input type="email" id="email-demo" autofocus multiple><br/>
+            number: <br/><input type="number" id="number-demo" min="1" max="20" step="3" value="10"><br/>
+            range: <br/><input type="range" id="rangedemo" min="1" max="20" step="any" value="10"><br/>
+            <output onforminput="value=rangedemo.value"></output><br/>
+            color: <br/><input type="color" id="colorpicker" list="colorlist" autofocus><br/>
+            <datalist id="colorlist" class="hide">
+                <option value="#ffffff">afengzai1</option>
+                <option value="#000000">fengzai2</option>
+                <option value="#ff0000">fengzai3</option>
+            </datalist>
+            <output onforminput="value=colorpicker.value"></output><br/>
+            file-accept: <input type="file" accept="image/*"><br>
+            file-multiple: <input type="file" multiple><br>
+            Encryption: <keygen name="security" /> <br>
+            progressor: <progress>Unknown</progress>
+        </form>
+        <script>
+            tel.
+        </script>
+    </body>
+</html>
